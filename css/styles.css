@@ -18,14 +18,15 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "Rubik", sans-serif;
+  font-family: "Krub", sans-serif;
+  
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Krub", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 ul {
   list-style: none;
@@ -37,4 +38,139 @@ a {
   max-width: 104rem;
   margin: 0 auto;
   padding: 0rem 2rem;
+}
+/* ?Navigation container */
+.top-nav {
+  width: 100%;
+  height: 13rem;
+  background: var(--color-primary-2);
+}
+
+.top-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-details {
+  display: flex;
+}
+
+.details :not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+}
+
+.details-text {
+  color: var(--color-secondary-1);
+  margin-left: 1.5rem;
+}
+
+.details-text>p {
+  font-style: 1.4rem;
+}
+
+/* End navigation container */
+
+/* ?Header section*/
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+}
+
+.nav {
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.nav-item {
+  margin: 0rem 1rem;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  padding: 1.5rem 0rem;
+  color: var(--color-secondary-1);
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+
+.nav-icon {
+  margin: 0rem 1rem;
+}
+
+.nav-btn {
+  padding: 1.5rem 2rem;
+  background-color: var(--color-primary-2);
+  color: var(--color-secondary-1);
+}
+
+.header-container {
+  width: 100%;
+  height: calc(100vh - 6rem);
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  width: 60%;
+}
+
+.header-secondary-title {
+  width: 40%;
+  font-weight: 400;
+  padding: 0.6rem;
+  border-left: 4px solid var(--color-primary-1);
+  margin-bottom: 0.7rem;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: var(--color-secondary-1);
+}
+
+.header-main-title {
+  font-size: 5rem;
+  color: var(--color-secondary-1);
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.header-p {
+  color: var(--color-secondary-1);
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+.header-btn {
+  background-color: var(--color-primary-1);
+  padding: 1.2rem 2.4rem;
+  color: var(--color-primary-2);
+  cursor: pointer;
 }
